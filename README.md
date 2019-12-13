@@ -7,7 +7,8 @@ First Step
 - Used angular material version 8.2.3, with theme indigo-ping (https://material.angular.io?theme=indigo-pink)
 
 
-#Below are Angular cli default setting details:
+# Below are Angular cli default setting details:
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
