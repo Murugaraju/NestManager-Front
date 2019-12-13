@@ -1,6 +1,10 @@
 # NestManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+First Step
+
+# Version Details
+- Used angular cli version 8.3.20
+- Used angular material version 8.2.3, with theme indigo-ping (https://material.angular.io?theme=indigo-pink)
 
 
 #Below are Angular cli default setting details:
