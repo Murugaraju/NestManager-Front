@@ -1,1 +1,13 @@
-<p>floorlist works!</p>
+<div class="dashboard-main">
+    <mat-toolbar>
+        <span>PVR PG Floors quick view</span>
+    </mat-toolbar>
+    <mat-list>
+        <mat-list-item class="list"  *ngFor="let i of t">
+            <mat-card  class="card">
+                Floor {{i}}
+            </mat-card>
+        </mat-list-item>
+    </mat-list>
+    
+</div>

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./floorlist.component.css']
 })
 export class FloorlistComponent implements OnInit {
-
+  t=[1,2,3,4,5]
   constructor() { }
 
   ngOnInit() {
