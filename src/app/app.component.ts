@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'NestManager';
+ title=[];
+ 
+  constructor(){
+    for(let i=0;i<99;i++){
+      console.log(i);
+      this.title.push(i);
+    }
+  console.log('asfdas',this.title)
+  };
+  
 }

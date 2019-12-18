@@ -1,0 +1,23 @@
+<app-nav [togglerSide]="side"></app-nav>
+<!-- <app-floorlist></app-floorlist> -->
+<mat-sidenav-container class="example-container" >
+    <mat-sidenav #side mode="side" class="sidenav" opened>
+      
+      <mat-list>
+        <mat-list-item  *ngFor="let i of title"role="listitem"><a style="width: 100%; align-items: flex-start ;" mat-button>Item super duperhit {{i}}</a></mat-list-item>
+    
+  
+      </mat-list>
+    
+  
+  
+    </mat-sidenav>
+    <mat-sidenav-content style="margin:5px">
+     
+      
+      <router-outlet></router-outlet>
+      
+    
+    </mat-sidenav-content>
+</mat-sidenav-container>
+  
