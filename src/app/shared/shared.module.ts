@@ -6,13 +6,15 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [NavComponent, LoginComponent, LogoutComponent, PagenotfoundComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   exports:[
     NavComponent,
