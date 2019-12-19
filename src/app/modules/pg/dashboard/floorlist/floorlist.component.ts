@@ -10,6 +10,7 @@ export class FloorlistComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
