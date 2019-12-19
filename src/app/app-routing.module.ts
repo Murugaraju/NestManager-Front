@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { LoginComponent } from './shared/login/login.component';
 // Todo is pending on Guard with authentication
 const routes: Routes = [
   {
@@ -9,12 +9,14 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {
+    path:'login',
+    
+    component:LoginComponent
+  },
+  {
     path:'pg',
-    loadChildren:()=>{ 
-    return import('./modules/pg/pg.module').then(
-      (mod)=>mod.PgModule
-    )
-      },
+    loadChildren:()=>import('./modules/pg/pg.module').then((mod)=>mod.PgModule)
+      
   }
 ];
 
