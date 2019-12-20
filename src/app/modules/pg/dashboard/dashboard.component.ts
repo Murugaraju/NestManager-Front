@@ -9,7 +9,7 @@ export class DashboardComponent implements OnInit {
   title=[];
   constructor() {
     for(let i=0;i<99;i++){
-      console.log(i);
+      // console.log(i);
       this.title.push(i);
     }
    }

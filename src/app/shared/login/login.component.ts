@@ -18,7 +18,11 @@ export class LoginComponent implements OnInit {
   });
   
 onSubmit(){
-  console.log('came in ',this.loginForm.value)
-  console.log('formgroup object',this.loginForm)
+  console.log('came in ',this.loginForm.value);
+  console.log('formgroup object',this.loginForm);
+
+  console.log('Going to initiate service method');
+
+  this.authService.login();
 }
 }
