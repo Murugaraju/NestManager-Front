@@ -1,13 +1,18 @@
-<mat-grid-list cols="2" >
-    <mat-grid-tile>
-        <mat-card >
+<mat-grid-list cols="2"  >
+    <mat-grid-tile class="gridtitle"> 
+        <mat-card class='card'>
             PG Image to Map (Todo)
         </mat-card>
         
     </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="card">
-            <mat-card style="margin-top:20%;margin-left:10%;border: .5px solid;">
+    <mat-grid-tile class="gridtitle" >
+        <mat-card class="card2">
+          
+          <mat-card style="margin-top:20%;margin-left:10%;border: .5px solid gray;padding-top: 0px; padding-left: 0px;padding-right: 0px;  ">
+              <mat-progress-bar *ngIf="loginLoading" mode="indeterminate" class="progressbar"></mat-progress-bar>
+              
+
+
                 <mat-card-header>
                     
                     <mat-card-title>Welcome to Nest Manager</mat-card-title>
@@ -30,7 +35,7 @@
                           <mat-hint *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched" style="color:red">*Field should not be empty</mat-hint>
                         </mat-form-field>
                        <br/>
-                        <button  style=" margin-left:3%;"  mat-raised-button color="primary">Login</button>
+                        <button [disabled]="loginLoading"  style=" margin-left:3%;"  mat-raised-button color="primary">Login</button>
                         
                        
                       </form>

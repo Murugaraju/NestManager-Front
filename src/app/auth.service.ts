@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   loggedIn=false;
+ 
   constructor() { }
   //creating fake authenticate
   isAuthenticate(){
@@ -16,7 +17,14 @@ export class AuthService {
   }
   login(){
     console.log("It worked in auth service")
-    this.loggedIn=true;
+    
+    const loginpromise = new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        this.loggedIn=true;
+        
+        return resolve({loggedIn:this.loggedIn})},3000)
+    })
+    return loginpromise
   }
   logout(){
     this.loggedIn=false;

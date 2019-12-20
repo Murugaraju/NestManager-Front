@@ -11,6 +11,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 @NgModule({
  
   exports:[
@@ -25,7 +26,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTabsModule,
     MatGridListModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }
